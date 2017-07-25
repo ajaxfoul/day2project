@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+<style>
+
+</style>
+<center>
+<p>
+  <h2><%= @fact.body %></h2>
+  
+</p>
+<div style="max-width: 600px; margin-top: 100px">
+<p>
+  <%= image_tag @fact.image, style: "max-width: 600px"  %>
+</p>
+</div>
+<div>
+<%= link_to 'Edit', edit_fact_path(@fact) %> |
+<%= link_to 'Back', facts_path %>
+</div>
+</center>
